@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+body {
+    font-family: 'Libre Franklin';
+}
+h1,p {
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.logo {
+    margin-bottom: 91px;
+}
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+
+}
+h1 span {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+.sub-heading p {
+    line-height: 72px;
+    font-size: 1rem;
+    color: hsl(209, 33%, 12%);
+    font-weight: 500;
+    padding-bottom: 18px;
+
+}
+input {
+    width: 100%;
+    margin-bottom: 17px;
+    padding: 19px 1px;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: hsl(0, 0%, 59%);
+}
+input#email {
+    border: 1px solid hsl(209, 33%, 12%);
+}
+input#submit {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 600;
+    box-shadow: 1px 3px 5px hsl(0deg 0% 59%);
+    cursor: pointer;
+    
+}
+::placeholder {
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 59%);
+    padding-left: 20px;
+    font-family: 'Libre Franklin';
+}
+p.errormsg {
+    margin-left: 25px;
+    font-size: 1.0rem;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    display: none;
+
+  
+}
+input#email:focus{
+    font-size: 1rem;
+    color:hsl(0, 0%, 59%)!important;
+    font-family: 'Libre Franklin';
+    outline: none;
+    padding-left: 20px;
+    background-color: #fff;
+}
+.image-placeholder {
+    margin-bottom: 50%;
+    margin-top: 20%;
+}
+svg {
+    padding: 12px;
+    background: #fff;
+    border-radius: 65%;
+    border: 1px solid hsl(0deg 0% 59%);
+    width: 7%;
+    margin: 2%;
+    color: hsl(223, 87%, 63%);
+    margin-bottom: 20%;
+}
+svg:hover{
+    color: #fff;
+    background-color:hsl(223, 87%, 63%) ;
+    border: none;
+}
+footer{
+    text-align: center;
+    margin-bottom: 30%;
+}
+.copyright p {
+    font-size: 0.9rem;
+    margin-bottom: 15%;
+}
+p.attribution{
+    font-size: 0.9rem;
+}
+input#email:target{
+    font-size: 1rem;
+    color:hsl(0, 0%, 59%)!important;
+    font-family: 'Libre Franklin';
+    outline: none;
+}
+@media screen and (min-width: 1000px){
+    h1 {
+        font-size: 3rem;
+    }
+    .sub-heading p{
+        font-size: 2rem;
+    }
+    .logo {
+        margin-bottom: 63px;
+    }
+    input {
+        width: 0;
+    }
+    input#email{
+            width: 397px;
+    }
+    
+    input {
+        font-size: 1rem;
+        color: hsl(0, 0%, 59%);
+    }
+   
+    input#submit {
+        width: 200px;
+        margin-left:12px;
+    }
+    .image-placeholder {
+        text-align: center;
+        margin-bottom: 10%;
+        margin-top: 20%;
+    }
+    img {
+        width: 80%;
+    }
+    svg {
+        border-radius: 71%;
+        width: 5%;
+        margin: 2%;
+        margin-bottom: 12%;
+    }
+
+footer{
+    margin-bottom: 0;
+}
+::placeholder {
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+}
