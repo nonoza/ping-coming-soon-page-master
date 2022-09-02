@@ -33,13 +33,13 @@ Users should be able to:
 
 ### Screenshot
 Form
-![](./images/form.png)
+![](./images/form.PNG)
 Active
-![](./images/active.png)
+![](./images/active.PNG)
 Error
-![](./images/error.png)
+![](./images/error.PNG)
 Mobile
-![](./images/mobile.png)
+![](./images/mobile.PNG)
 
 
 
