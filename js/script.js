@@ -1,30 +1,27 @@
+//Defining the variables
 
-const email = document.forms["signup"]["email"].value;
-const form = document.getElementById("form");
-const emailborder = document.querySelector("#email");
-let errormgs = document.querySelector(".errormsg");
-form.addEventListener('submit', (e) =>{
- 
-    e.preventDefault();
-    if (!email) {
-      errormgs.style.display = "block";
-      emailborder.style.border = "1px solid hsl(354, 100%, 66%)";
-    } else {
-      errormgs.style.display = "none";
-    }
-    if (email) {
-     if (ValidateEmail(email)){
-      errormgs.style.display = "none";
-     } else {
-      errormgs.style.display = "block";
-      emailborder.style.border = "1px solid hsl(354, 100%, 66%)";
-     }
-    }
+const submit = document.getElementById("submit");
+const emptyEmailfield = document.querySelector("#emptyfield");
+const validateEmail = document.querySelector("#validate");
+
+// adding the click listener to the button
+submit.addEventListener('click', (e) =>{
+  const email = document.getElementById("email").value;
+  e.preventDefault();
+  if (email ==""){
+    emptyEmailfield.style.display = "block";
+   }  else {
+    emptyEmailfield.style.display = "none";
+   }
+   if (ValidateEmail(email)){
+    validateEmail.style.display = "none";
+   } else {
+    validateEmail.style.display = "block";
+   }
+
+   console.log(email);
   });
- 
-  function ValidateEmail(emails) {
-
-    const pattens = "/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/";
-    return pattens.test(String(emails).toLocaleLowerCase());
- 
-}
+  function ValidateEmail(email){
+    const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return pattern.test(String(email).toLocaleLowerCase());
+  }
