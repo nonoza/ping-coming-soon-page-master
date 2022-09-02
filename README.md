@@ -38,8 +38,7 @@ Active
 ![](./images/active.PNG)
 Error
 ![](./images/error.PNG)
-Mobile
-![](./images/mobile.PNG)
+
 
 
 
